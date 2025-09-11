@@ -1,0 +1,294 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 20px;
+  border-radius: 15px;
+  margin-bottom: 60px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.policies-section {
+  margin-bottom: 60px;
+}
+
+.policies-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.policies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.policy-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border: 1px solid #e1e8ed;
+  transition: all 0.3s ease;
+}
+
+.policy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.policy-card h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.policy-description {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.policy-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.coverage {
+  color: #27ae60;
+}
+
+.premium {
+  color: #3498db;
+}
+
+.learn-more-btn {
+  width: 100%;
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #2980b9;
+}
+
+.no-policies {
+  text-align: center;
+  padding: 50px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.cta-section {
+  background: white;
+  padding: 60px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.cta-section h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  display: inline-block;
+}
+
+.cta-btn.primary {
+  background: #27ae60;
+  color: white;
+}
+
+.cta-btn.primary:hover {
+  background: #229954;
+  transform: translateY(-2px);
+}
+
+.cta-btn.secondary {
+  background: transparent;
+  color: #3498db;
+  border: 2px solid #3498db;
+}
+
+.cta-btn.secondary:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+  
+  .policies-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .policy-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+.key-benefits {
+  color: #2c3e50;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-left: 3px solid #27ae60;
+  border-radius: 4px;
+}
+
+.policy-duration {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+.policy-duration span {
+  background: #e8f4fd;
+  padding: 5px 12px;
+  border-radius: 15px;
+  border: 1px solid #3498db;
+}
+
+.enrollment-info {
+  background: #fff3cd !important;
+  border-left-color: #ffc107 !important;
+}
+
+.enrollment-info p {
+  color: #856404 !important;
+  font-weight: 500;
+}
+
+/* Enhanced policy card styling */
+.policy-card h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.policy-card .policy-description {
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.policy-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.coverage {
+  color: #27ae60;
+}
+
+.premium {
+  color: #3498db;
+}
+
+.learn-more-btn {
+  width: 100%;
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
