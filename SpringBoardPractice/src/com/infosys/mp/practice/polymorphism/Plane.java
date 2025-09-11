@@ -9,7 +9,7 @@ public class Plane {
 		System.out.println("The plane is Flying");
 	}
 	public void land() {
-		System.out.println("The plane is landing");
+		System.out.println("The plane is not landing");
 	}
 
 }
